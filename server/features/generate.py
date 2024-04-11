@@ -20,7 +20,7 @@ load_dotenv()
 
 def generate(p,user):
     symbol_pattern = r'[^\w\s]' 
-    genai.configure(api_key="AIzaSyAUfPsa_F6RlaXH3-z3Nkd46R8fFvYzu1o")
+    genai.configure(api_key="AIzaSyDFczqPTEXVpVFxsWk4e_bZEndGToIOMqs")
 
     palm = genai.GenerativeModel('gemini-pro')
     response =  palm.generate_content(p+"(write only text without any * # @ ! symbols))")
